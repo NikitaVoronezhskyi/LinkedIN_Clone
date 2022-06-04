@@ -1,0 +1,37 @@
+.haeder__right-list-item{
+    font-size: 16px;
+    color: var(--grey);
+    padding: 5px;
+}
+
+.header__right-list-item-link__icon{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.header__right-list-item-link__button{
+    color: var(--grey);
+    cursor: pointer;
+    border: none;
+    background: inherit;
+}
+
+
+.header__right-list-item-link{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+.haeder__right-list-item:hover,
+.header__right-list-item-link__button:hover{
+    transition: 0.2s;
+    color: black;
+}
+
+.header__right-list-item-link__text{
+    font-weight: 500;
+    color: var(--darker-grey);
+}
