@@ -1,0 +1,47 @@
+.feed{
+    flex: 0.7;
+    padding: 0 20px;
+}
+
+.feed__inputContainer{
+    display: flex;
+    justify-content: space-evenly;
+    background: white;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.feed__input{
+    display: flex;
+    flex: 1;
+    border-radius: 30px;
+    padding: 10px;
+    border: 1px solid lightgray;
+}
+
+.feed__input > form {
+    display: flex;
+    width: 100%;
+}
+
+.feed__input > form > input {
+    padding: 10px;
+    border: none;
+    flex: 1;
+    padding: 0 10px;
+    outline: none;
+    font-weight: 600;
+}
+
+.feed__input > form >button{
+    cursor: pointer;
+    background: none;
+    border: none;
+    padding: 5px;
+    font-size: 18px;
+    border-radius: 15px;
+}
+
+.feed__input > form > button:hover{
+    background: whitesmoke;
+}

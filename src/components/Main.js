@@ -1,14 +1,14 @@
 import React from 'react'
 import SidebarUser from './SidebarUser'
-import Center from './Center'
-import SidebarNews from './SidebarNews'
+import Feed from './Feed'
+import News from './News'
 import "./Main.css"
 const Main = () => {
   return (
     <main className='main'>
         <SidebarUser/>
-        <Center/>
-        <SidebarNews/>
+        <Feed/>
+        <News/>
     </main>
   )
 }

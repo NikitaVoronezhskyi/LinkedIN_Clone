@@ -150,11 +150,12 @@ img {
 
 body {
     font-family: Poppins, sans-serif;
-    background: #fff;
+
 }
 
 :root {
     --grey: hsl(0,0%,80%);
     --light-grey:hsl(210,41.67%,95.29%);
     --darker-grey :hsl(0,0%,50%);
+    --blue: #0a66c2;
 }
