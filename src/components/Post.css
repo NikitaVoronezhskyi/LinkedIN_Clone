@@ -1,0 +1,36 @@
+.post{
+    background: white;
+    padding: 15px;
+    border-radius: 15px;
+    margin-top: 20px;
+}
+
+
+.post__buttons{
+    border-top: 1px solid var(--light-grey);
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.post__haeder{
+    display: flex;
+    align-items: center;
+}
+
+.post__body{
+    padding: 10px 0;
+}
+
+.post__info{
+    padding: 10px;
+}
+
+.post__info-title{
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.post__info-text{
+    font-size: 13px;
+    color: var(--darker-grey);
+}

@@ -6,6 +6,7 @@
 .feed__inputContainer{
     display: flex;
     justify-content: space-evenly;
+    flex-direction: column;
     background: white;
     padding: 10px;
     border-radius: 10px;
@@ -44,4 +45,10 @@
 
 .feed__input > form > button:hover{
     background: whitesmoke;
+}
+
+.feed__inputOptions{
+    padding: 5px 0;
+    display: flex;
+    justify-content: space-evenly;
 }
