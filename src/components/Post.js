@@ -7,18 +7,19 @@ import InsertCommentOutlinedIcon from '@mui/icons-material/InsertCommentOutlined
 import ShareOutlinedIcon from '@mui/icons-material/ShareOutlined';
 import SendOutlinedIcon from '@mui/icons-material/SendOutlined';
 
-const Post = (Name,Description,Message,photoUrl) => {
+
+const Post = ({Name,Description,Message,photoUrl}) => {
   return (
     <div className='post'>
         <div className="post__haeder">
             <Avatar/>
             <div className="post__info">
-            <h2 className='post__info-title'>Nikita Voronezhskyi</h2>
-            <p className='post__info-text'>Nani</p>
+            <h2 className='post__info-title'>{Name}</h2>
+            <p className='post__info-text'>{Description}</p>
         </div>
         </div>
         <div className="post__body">
-            <p className='post__body-text'>Message</p>
+            <p className='post__body-text'>{Message}</p>
         </div>
         <div className="post__buttons">
             <InputOption Icon={ThumbUpOutlinedIcon} Title="Like" Color="grey"/>
