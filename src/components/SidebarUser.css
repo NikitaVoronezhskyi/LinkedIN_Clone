@@ -1,14 +1,12 @@
 .sidebar{
     position: sticky;
-    top: 150px;
-    flex: 0.15;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    top: 100px;
+    flex: 0.2;
     border: 2px solid var(--light-grey);
     border-bottom: 0;
     border-radius: 10px;
     text-align: center; 
+    height: fit-content;
 }
 
 .sidebar__top{
@@ -64,16 +62,15 @@
 .sidebar__top-stats-views{
     margin-top: 10px;
     display: flex;
+    align-items: center;
     justify-content: space-between;
 }
-
 
 .sidebar__top-stats-views-text{
     color: var(--darker-grey);
     font-size: 13px;
     font-weight: 600;
 }
-
 
 .sidebar__bottom{
     display: flex;
@@ -103,4 +100,8 @@
 
 .sidebar__bottom-recent:hover{
     background: whitesmoke;
+}
+
+.sidebar__top-stats-views-numbers{
+    color: var(--blue);
 }

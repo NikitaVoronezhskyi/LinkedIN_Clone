@@ -31,11 +31,11 @@ const SidebarUser = () => {
           <div className="sidebar__top-stats">
             <div className="sidebar__top-stats-views">
               <p className="sidebar__top-stats-views-text">Who viewed you</p>
-              <p className="sidebar__top-stats-views-number<">2555</p>
+              <p className="sidebar__top-stats-views-numbers">2555</p>
             </div>
             <div className="sidebar__top-stats-views">
               <p className="sidebar__top-stats-views-text">Views on post</p>
-              <p className="sidebar__top-stats-views-number<">3200</p>
+              <p className="sidebar__top-stats-views-numbers">3123</p>
             </div>
           </div>
       </div>

@@ -1,6 +1,12 @@
 .feed{
-    flex: 0.7;
+    flex: 0.6;
     padding: 0 20px;
+}
+
+.container{
+    display: flex;
+    margin: 0 auto;
+    justify-content: space-between;
 }
 
 .feed__inputContainer{

@@ -27,6 +27,7 @@ const Header = () => {
 
   return (
     <header className="header">
+      <div className="container">
       <div className="header__left">
         <a href="#">
           <img
@@ -54,6 +55,7 @@ const Header = () => {
           <HeaderList Icon={NotificationsNoneIcon} title="Notification" />
           <HeaderList avatar={true} onClick={logoutApp} title="Logout" />
         </ul>
+      </div>
       </div>
     </header>
   );

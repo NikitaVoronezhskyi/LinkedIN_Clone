@@ -3,8 +3,17 @@
     padding: 15px;
     border-radius: 15px;
     margin-top: 20px;
+    animation: flipin 0.3s linear;
 }
 
+@keyframes flipin {
+    0% {
+        transform: translateY(-50%);
+      }
+    100%{
+        transform: translateY(0);
+    }
+}
 
 .post__buttons{
     border-top: 1px solid var(--light-grey);
