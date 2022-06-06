@@ -15,7 +15,7 @@ const Post = ({Name,Description,Message,photoUrl}) => {
   return (
     <div className='post'>
         <div className="post__haeder">
-            <Avatar src={photoUrl}>{Name[0]}</Avatar>
+            <Avatar alt="Your Avatar" src={photoUrl}>{Name[0]}</Avatar>
             <div className="post__info">
             <h2 className='post__info-title'>{user.displayName}</h2>
             <p className='post__info-text'>{Description}</p>

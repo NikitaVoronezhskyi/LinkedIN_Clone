@@ -31,6 +31,8 @@ const Header = () => {
       <div className="header__left">
         <a href="#">
           <img
+          height={1}
+          width={1}
             className="header__left-logo"
             loading="lazy"
             src="https://cdn-icons-png.flaticon.com/512/174/174857.png"

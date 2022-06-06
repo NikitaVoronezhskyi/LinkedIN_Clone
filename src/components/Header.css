@@ -24,6 +24,7 @@
 
 .header__left-logo{
     object-fit: contain;
+    width: 40px;
     height: 40px;
 }
 

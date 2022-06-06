@@ -10,7 +10,7 @@ const HeaderList = ({avatar,title,Icon, onClick}) => {
   return (
     <li onClick={onClick}  className="haeder__right-list-item">
       {Icon && <a href='#' className='header__right-list-item-link__icon'>{<Icon/>}{title}</a>}
-      {avatar && (<a className='header__right-list-item-link__button'><Avatar>{user?.email[0]}</Avatar></a>)}
+      {avatar && (<a href="#" className='header__right-list-item-link__button'><Avatar>{user?.email[0]}</Avatar></a>)}
     </li>
   )
 }
