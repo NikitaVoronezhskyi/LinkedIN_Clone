@@ -5,12 +5,17 @@
 }
 
 .header__right-list-item-link__icon{
+    height: 40px;
     display: flex;
     align-items: center;
     flex-direction: column;
 }
 
 .header__right-list-item-link__button{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 16px;
     color: var(--grey);
     cursor: pointer;
     border: none;

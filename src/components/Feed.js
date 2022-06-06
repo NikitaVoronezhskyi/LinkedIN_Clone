@@ -9,14 +9,20 @@ import AdbOutlinedIcon from "@mui/icons-material/AdbOutlined";
 import InputOption from "./InputOption";
 import { db } from "./Firebase.js";
 import firebase from "firebase/compat/app";
+import { useSelector } from 'react-redux';
+import { selectUser } from '../features/userSlice';
+
 
 
 
 const Feed = () => {
+  const user = useSelector((selectUser))
   const [input, setInput] = useState("");
   const [posts, setPosts] = useState([]);
   useEffect(() => {
-    db.collection("posts").onSnapshot((snapshot) => {
+    db.collection("posts")
+    .orderBy(`timestamp`,`desc`)
+    .onSnapshot((snapshot) => {
       setPosts(
         snapshot.docs.map((doc) => ({
           id: doc.id,
@@ -29,11 +35,11 @@ const Feed = () => {
   const sendPost = (e) => {
     e.preventDefault();
     db.collection("posts").add({
-      Name: "Nikita Voronezhskyi",
-      Description: "This is It",
+      Name: user.displayName,
+      Description: user.email,
       Message: input,
-      photoUrl: "",
-      Timestamp: firebase.firestore.FieldValue.serverTimestamp(),
+      photoUrl: user.photoURL || "",
+      timestamp: firebase.firestore.FieldValue.serverTimestamp(),
     });
     setInput("");
   };

@@ -6,15 +6,18 @@ import ThumbUpOutlinedIcon from '@mui/icons-material/ThumbUpOutlined';
 import InsertCommentOutlinedIcon from '@mui/icons-material/InsertCommentOutlined';
 import ShareOutlinedIcon from '@mui/icons-material/ShareOutlined';
 import SendOutlinedIcon from '@mui/icons-material/SendOutlined';
+import { useSelector } from 'react-redux';
+import { selectUser } from '../features/userSlice';
 
 
 const Post = ({Name,Description,Message,photoUrl}) => {
+  const user = useSelector((selectUser))
   return (
     <div className='post'>
         <div className="post__haeder">
-            <Avatar/>
+            <Avatar src={photoUrl}>{Name[0]}</Avatar>
             <div className="post__info">
-            <h2 className='post__info-title'>{Name}</h2>
+            <h2 className='post__info-title'>{user.displayName}</h2>
             <p className='post__info-text'>{Description}</p>
         </div>
         </div>

@@ -7,11 +7,24 @@ import PeopleIcon from "@mui/icons-material/People";
 import WorkIcon from "@mui/icons-material/Work";
 import MessageIcon from "@mui/icons-material/Message";
 import NotificationsNoneIcon from "@mui/icons-material/NotificationsNone";
-import AccountCircleIcon from "@mui/icons-material/AccountCircle";
+import { useDispatch } from "react-redux";
+import { auth } from "./Firebase";
+import { logout } from "../features/userSlice";
+
 
 
 
 const Header = () => {
+  const dispatch = useDispatch();
+  const logoutApp = ()=>{
+    if (window.confirm("Are you sure you want to logout?")) {
+      dispatch(logout())
+      auth.signOut()
+    } 
+    }
+
+
+
   return (
     <header className="header">
       <div className="header__left">
@@ -39,7 +52,7 @@ const Header = () => {
           <HeaderList Icon={WorkIcon} title="Jobs" />
           <HeaderList Icon={MessageIcon} title="Message" />
           <HeaderList Icon={NotificationsNoneIcon} title="Notification" />
-          <HeaderList Avatar={AccountCircleIcon} />
+          <HeaderList avatar={true} onClick={logoutApp} title="Logout" />
         </ul>
       </div>
     </header>

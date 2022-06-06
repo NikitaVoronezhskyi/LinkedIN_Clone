@@ -1,11 +1,16 @@
 import React from 'react'
+import { useSelector } from 'react-redux'
+import { selectUser } from '../features/userSlice'
+import { Avatar } from '@mui/material'
 import "./HeaderList.css"
 
-const HeaderList = ({Avatar,title,Icon}) => {
+const HeaderList = ({avatar,title,Icon, onClick}) => {
+  const user = useSelector((selectUser))
+
   return (
-    <li className="haeder__right-list-item">
+    <li onClick={onClick}  className="haeder__right-list-item">
       {Icon && <a href='#' className='header__right-list-item-link__icon'>{<Icon/>}{title}</a>}
-      {Avatar && <button className='header__right-list-item-link__button'><Avatar/>{title}</button>}
+      {avatar && (<a className='header__right-list-item-link__button'><Avatar>{user?.email[0]}</Avatar></a>)}
     </li>
   )
 }
