@@ -35,10 +35,10 @@ const Feed = () => {
   const sendPost = (e) => {
     e.preventDefault();
     db.collection("posts").add({
-      Name: user.displayName,
-      Description: user.email,
-      Message: input,
-      photoUrl: user.photoURL || "",
+      name: user.displayName,
+      description: user.email,
+      message: input,
+      photoURL: user.photoURL || "",
       timestamp: firebase.firestore.FieldValue.serverTimestamp(),
     });
     setInput("");
@@ -80,14 +80,14 @@ const Feed = () => {
           <InputOption Title="Memes" Icon={AdbOutlinedIcon} Color="#e7a33e" />
         </div>
       </div>
-      {posts.map(({ id, data: { Name, Description, Message, photoUrl } }) => {
+      {posts.map(({ id, data: { name, description, message, photoURL } }) => {
         return (
           <Post
             key={id}
-            Name={Name}
-            Description={Description}
-            Message={Message}
-            photoUrl={photoUrl}
+            name={name}
+            description={description}
+            message={message}
+            photoUrl={photoURL}
           />
         );
       })}

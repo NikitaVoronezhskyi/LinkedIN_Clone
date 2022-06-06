@@ -11,6 +11,7 @@ import "./SidebarUser.css";
 const SidebarUser = () => {
 
   const user = useSelector((selectUser))
+  console.log(user);
   const recentItems = (topic) =>{
     return <div className="sidebar__bottom-recent">
     <span className="sidebar__bottom-recent-hash">#</span>
@@ -24,7 +25,7 @@ const SidebarUser = () => {
       <div className="sidebar__top">
       <img className="sidebar__top-img" src="https://images.unsplash.com/photo-1579546929518-9e396f3cc809?ixlib=rb-1.2.1&w=1080&fit=max&q=80&fm=jpg&crop=entropy&cs=tinysrgb" alt="Gradient" />
             <div className="sidebar-top-avatar">
-            <img className="sidebar__top-avatar-photo" src={user.photoURL} alt="Your Photo"></img>
+            <img className="sidebar__top-avatar-photo" src={user.photoURL}></img>
             <h2 className="sidebar__top-avatar-name">{user.displayName}</h2>
             <p className="sidebar__top-avatar-email">{user.email}</p>
             </div>

@@ -5,7 +5,7 @@ const InputOption = ({Title,Icon,Color}) => {
   return (
     <div className='inputOption'>
      <Icon style={{color:Color}}/>
-     <p>{Title}</p>
+     <h4>{Title}</h4>
     </div>
   )
 }
