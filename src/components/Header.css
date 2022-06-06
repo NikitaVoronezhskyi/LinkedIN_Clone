@@ -25,6 +25,7 @@
 .header__left-logo{
     object-fit: contain;
     height: 40px;
+    width: 40px;
 }
 
 .header__left-search{

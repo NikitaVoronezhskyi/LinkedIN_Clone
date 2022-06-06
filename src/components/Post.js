@@ -14,7 +14,7 @@ const Post = ({ name, description, message, photoURL }) => {
   return (
     <div className="post">
       <div className="post__haeder">
-      <Avatar src={photoURL}>{user?.email[0]}</Avatar>
+      <Avatar alt="Avatar" src={photoURL}>{user?.email[0]}</Avatar>
         <div className="post__info">
           <h2 className="post__info-title">{name}</h2>
           <p className="post__info-text">{description}</p>

@@ -10,7 +10,7 @@ const News = () => {
             <FiberManualRecordIcon/>
             </div>
             <div className="aside__article-right">
-            <h4 className='aside__article-heading'>{heading}</h4>  
+            <h3 className='aside__article-heading'>{heading}</h3>  
             <p className='aside__article-text'>{subtitle}</p>
             </div>
         </article>
