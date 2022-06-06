@@ -13,7 +13,6 @@ const Login = () => {
     const dispatch = useDispatch()
 
     const register = () =>{
-        auth.createUserWithEmailAndPassword(email,password)
         if (!name) {
             return alert("To Register, please enter a name")
         }if (!name && !email) {
@@ -26,7 +25,7 @@ const Login = () => {
         .then((userAuth)=>{
             userAuth.user.updateProfile({
                 displayName: name,
-                photoURL: profilePicture
+                photoURL: profilePicture,
             })
             .then(()=>{
                 dispatch(login({
@@ -50,6 +49,7 @@ const Login = () => {
                 displayName: name,
                 photoURL: profilePicture,
             }))
+            console.log("Login")
         }).catch(error => alert(error))
         
     

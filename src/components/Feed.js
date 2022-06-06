@@ -87,7 +87,7 @@ const Feed = () => {
             name={name}
             description={description}
             message={message}
-            photoUrl={photoURL}
+            photoURL={photoURL}
           />
         );
       })}

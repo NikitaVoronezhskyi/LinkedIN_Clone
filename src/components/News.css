@@ -16,9 +16,22 @@
 }
 
 .aside__article{
+    cursor: pointer;
     display: flex;
     align-items: center;
     padding: 10px 0;
+}
+
+.aside__article-left{
+    color: var(--blue);
+}
+
+.aside__article-right{
+    padding: 0 10px;
+}
+.aside__article:hover{
+    background: whitesmoke;
+    border-radius: 15px;
 }
 
 

@@ -18,6 +18,7 @@ const Header = () => {
   const dispatch = useDispatch();
   const logoutApp = ()=>{
     if (window.confirm("Are you sure you want to logout?")) {
+      console.log("LogOut");
       dispatch(logout())
       auth.signOut()
     } 

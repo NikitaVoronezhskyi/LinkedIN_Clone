@@ -11,7 +11,6 @@ import "./SidebarUser.css";
 const SidebarUser = () => {
 
   const user = useSelector((selectUser))
-  console.log(user);
   const recentItems = (topic) =>{
     return <div className="sidebar__bottom-recent">
     <span className="sidebar__bottom-recent-hash">#</span>
